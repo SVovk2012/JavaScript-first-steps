@@ -40,7 +40,7 @@ function runIt() {
 };
 
 for(i = 0; i < required_result; i++){
- set(function(){runIt()}, 5000);
+ setTimeout(function(){runIt()}, 5000);
 }
 
 function doTrue() {
