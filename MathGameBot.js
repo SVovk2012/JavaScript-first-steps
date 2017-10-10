@@ -1,8 +1,9 @@
-var restart = document.getElementById('button_correct');
-restart.click();
-
+// PLEASE ADJUST required_result AND delay VARIABLES ACCORDING TO YOUR PREFERENCES. ENJOY! 
 var required_result = 32; // required result for the game
 var delay = 100; // delay in ms
+
+var restart = document.getElementById('button_correct');
+restart.click();
 
 function runIt() {
   var task_x = +document.getElementById('task_x').innerHTML;
