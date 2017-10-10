@@ -2,6 +2,7 @@ var restart = document.getElementById('button_correct');
 restart.click();
 
 var required_result = 32; // required result for the game
+var delay = 100; // delay in ms
 
 function runIt() {
   var task_x = +document.getElementById('task_x').innerHTML;
@@ -39,19 +40,14 @@ function runIt() {
   }
 };
 
-var delay = 100; // delay in ms
+
 for(i = 0; i < required_result; i++){
  setTimeout(function(){runIt()}, i*delay); 
 }
 
 function doTrue() {
- 
     document.getElementById('button_correct').click();
- 
 };
 function doFalse() {
-  
     document.getElementById('button_wrong').click();
- 
-  
 };
