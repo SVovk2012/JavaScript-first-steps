@@ -1,3 +1,5 @@
+// for hack put breakpoint on the line 434 (432 in original code). Than type in console "endScore = 'required number';"
+
 var Flags = {};
 Flags.DISABLE_LEADERBOARD = false;
 
