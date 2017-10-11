@@ -77,7 +77,6 @@ function stopGame() {  // function for stoping the game. This function chooses t
   }
 };
 
-
 for(i = 0; i < required_result; i++){
  setTimeout(function(){continueGame()}, i*delay); 
 }
@@ -88,6 +87,7 @@ setTimeout(function(){stopGame()}, required_result*delay+5);
 function doTrue() {
     document.getElementById('button_correct').click();
 };
+
 function doFalse() {
     document.getElementById('button_wrong').click();
 };
