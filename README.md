@@ -1,2 +1,2 @@
-# JavaScript-first-steps
-First steps in JS 
+# JavaScript
+Game bots in JS 
