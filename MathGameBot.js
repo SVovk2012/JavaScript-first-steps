@@ -5,7 +5,7 @@ var delay = 100; // delay in ms.
 var restart = document.getElementById('button_correct');
 restart.click();
 
-function runIt() {
+function continueGame() { // function for continuing the game. This function chooses the right result.
   var task_x = +document.getElementById('task_x').innerHTML;
   var task_op = document.getElementById('task_op').innerHTML;
   var task_y = +document.getElementById('task_y').innerHTML;
@@ -41,7 +41,7 @@ function runIt() {
   }
 };
 
-function runItReverse() {  // function for stoping the game. This function chooses the wrong result
+function stopGame() {  // function for stoping the game. This function chooses the wrong result
   var task_x = +document.getElementById('task_x').innerHTML;
   var task_op = document.getElementById('task_op').innerHTML;
   var task_y = +document.getElementById('task_y').innerHTML;
@@ -79,10 +79,10 @@ function runItReverse() {  // function for stoping the game. This function choos
 
 
 for(i = 0; i < required_result; i++){
- setTimeout(function(){runIt()}, i*delay); 
+ setTimeout(function(){continueGame()}, i*delay); 
 }
 for(j = 0; j < 3; j++){
-setTimeout(function(){runItReverse()}, required_result*delay+5);
+setTimeout(function(){stopGame()}, required_result*delay+5);
 }
 
 function doTrue() {
