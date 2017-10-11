@@ -77,10 +77,11 @@ function stopGame() {  // function for stoping the game. This function chooses t
   }
 };
 
-for(i = 0; i < required_result; i++){
+for(i = 0; i < required_result; i++){   // gaming till the required result
  setTimeout(function(){continueGame()}, i*delay); 
 }
-for(j = 0; j < 3; j++){
+
+for(j = 0; j < 3; j++){                 // stoping the game by choosing the wrong result 3 times
 setTimeout(function(){stopGame()}, required_result*delay+5);
 }
 
