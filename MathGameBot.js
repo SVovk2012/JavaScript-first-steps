@@ -41,7 +41,7 @@ function continueGame() { // function for continuing the game. This function cho
   }
 };
 
-function stopGame() {  // function for stoping the game. This function chooses the wrong result
+function stopGame() {  // function for stoping the game. This function chooses the wrong result.
   var task_x = +document.getElementById('task_x').innerHTML;
   var task_op = document.getElementById('task_op').innerHTML;
   var task_y = +document.getElementById('task_y').innerHTML;
